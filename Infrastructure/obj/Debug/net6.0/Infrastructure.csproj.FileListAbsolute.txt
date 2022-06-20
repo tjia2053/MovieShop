@@ -13,3 +13,5 @@
 /Users/tongyuejia/Desktop/Antra/MovieShop/Infrastructure/obj/Debug/net6.0/refint/Infrastructure.dll
 /Users/tongyuejia/Desktop/Antra/MovieShop/Infrastructure/obj/Debug/net6.0/Infrastructure.pdb
 /Users/tongyuejia/Desktop/Antra/MovieShop/Infrastructure/obj/Debug/net6.0/ref/Infrastructure.dll
+/Users/tongyuejia/Desktop/Antra/MovieShop/Infrastructure/bin/Debug/net6.0/Infrastructure.runtimeconfig.json
+/Users/tongyuejia/Desktop/Antra/MovieShop/Infrastructure/obj/Debug/net6.0/Infrastructure.genruntimeconfig.cache

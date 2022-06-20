@@ -10,3 +10,5 @@
 /Users/tongyuejia/Desktop/Antra/MovieShop/ApplicationCore/obj/Debug/net6.0/refint/ApplicationCore.dll
 /Users/tongyuejia/Desktop/Antra/MovieShop/ApplicationCore/obj/Debug/net6.0/ApplicationCore.pdb
 /Users/tongyuejia/Desktop/Antra/MovieShop/ApplicationCore/obj/Debug/net6.0/ref/ApplicationCore.dll
+/Users/tongyuejia/Desktop/Antra/MovieShop/ApplicationCore/bin/Debug/net6.0/ApplicationCore.runtimeconfig.json
+/Users/tongyuejia/Desktop/Antra/MovieShop/ApplicationCore/obj/Debug/net6.0/ApplicationCore.genruntimeconfig.cache
