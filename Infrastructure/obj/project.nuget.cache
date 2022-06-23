@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ACcdAQXUXZYdnoyZ5O6KGvEcE77QrX+ayQ38S/sxG+RLRQUa5gIZoLezM9RfiMTap6emwB9q5iPhGtvjaVbm8g==",
+  "dgSpecHash": "uUN5jfZOS+4Trekktu3DfgZXwuoYRe07u9b26vGWUAJsMSxgCKT9yAmAaxNzOePlbmwtUQT6DIf/DDNaI2XxUQ==",
   "success": true,
-  "projectFilePath": "/Users/tongyuejia/Desktop/Antra/MovieShop/Infrastructure/Infrastructure.csproj",
+  "projectFilePath": "/Users/tongyuejia/Desktop/MyProject/MovieShop/Infrastructure/Infrastructure.csproj",
   "expectedPackageFiles": [
     "/Users/tongyuejia/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/tongyuejia/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",

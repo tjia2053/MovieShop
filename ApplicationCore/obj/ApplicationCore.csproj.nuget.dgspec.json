@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tongyuejia/Desktop/Antra/MovieShop/ApplicationCore/ApplicationCore.csproj": {}
+    "/Users/tongyuejia/Desktop/MyProject/MovieShop/ApplicationCore/ApplicationCore.csproj": {}
   },
   "projects": {
-    "/Users/tongyuejia/Desktop/Antra/MovieShop/ApplicationCore/ApplicationCore.csproj": {
+    "/Users/tongyuejia/Desktop/MyProject/MovieShop/ApplicationCore/ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tongyuejia/Desktop/Antra/MovieShop/ApplicationCore/ApplicationCore.csproj",
+        "projectUniqueName": "/Users/tongyuejia/Desktop/MyProject/MovieShop/ApplicationCore/ApplicationCore.csproj",
         "projectName": "ApplicationCore",
-        "projectPath": "/Users/tongyuejia/Desktop/Antra/MovieShop/ApplicationCore/ApplicationCore.csproj",
+        "projectPath": "/Users/tongyuejia/Desktop/MyProject/MovieShop/ApplicationCore/ApplicationCore.csproj",
         "packagesPath": "/Users/tongyuejia/.nuget/packages/",
-        "outputPath": "/Users/tongyuejia/Desktop/Antra/MovieShop/ApplicationCore/obj/",
+        "outputPath": "/Users/tongyuejia/Desktop/MyProject/MovieShop/ApplicationCore/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tongyuejia/.nuget/NuGet/NuGet.Config"

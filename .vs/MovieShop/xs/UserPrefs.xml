@@ -1,8 +1,6 @@
 ﻿<Properties StartupConfiguration="{C0F986CB-DDEA-486B-AA76-DF301B1149A8}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.MovieShopMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="MovieShopMVC/appsettings.json">
     <Files>
       <File FileName="MovieShopMVC/Controllers/HomeController.cs" Line="57" Column="1" />
@@ -10,7 +8,7 @@
       <File FileName="ApplicationCore/Contracts/Repositories/IMovieRepository.cs" Line="1" Column="1" />
       <File FileName="ApplicationCore/Contracts/Repositories/IUserRepository.cs" Line="1" Column="1" />
       <File FileName="ApplicationCore/Contracts/Repositories/ICastRepository.cs" Line="1" Column="1" />
-      <File FileName="ApplicationCore/Contracts/Repositories/IPurchaseRepository.cs" Line="1" Column="1" />
+      <File FileName="ApplicationCore/Contracts/Repositories/IPurchaseRepository.cs" Line="9" Column="1" />
       <File FileName="ApplicationCore/Contracts/Repositories/IReportRepository.cs" Line="1" Column="1" />
       <File FileName="ApplicationCore/Contracts/Services/IMovieService.cs" Line="1" Column="1" />
       <File FileName="ApplicationCore/Contracts/Services/IUserService.cs" Line="1" Column="1" />
@@ -29,11 +27,25 @@
       <File FileName="Infrastructure/Services/GenreService.cs" Line="6" Column="43" />
       <File FileName="Infrastructure/Services/AdminService.cs" Line="6" Column="43" />
       <File FileName="Infrastructure/Services/CastService.cs" Line="5" Column="2" />
-      <File FileName="MovieShopMVC/appsettings.json" Line="3" Column="50" />
-      <File FileName="Infrastructure/Data/MovieShopDbContext.cs" Line="9" Column="26" />
+      <File FileName="MovieShopMVC/appsettings.json" Line="7" Column="19" />
+      <File FileName="Infrastructure/Data/MovieShopDbContext.cs" Line="28" Column="1" />
       <File FileName="MovieShopMVC/Program.cs" Line="21" Column="39" />
       <File FileName="../../../../../usr/local/share/dotnet/sdk/6.0.301/Microsoft.Common.CurrentVersion.targets" Line="4699" Column="5" />
-      <File FileName="ApplicationCore/Entities/Genre.cs" Line="16" Column="12" />
+      <File FileName="ApplicationCore/Entities/Genre.cs" Line="18" Column="9" />
+      <File FileName="Infrastructure/Migrations/MovieShopDbContextModelSnapshot.cs" Line="1" Column="1" />
+      <File FileName="MovieShopMVC/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="ApplicationCore/Entities/Cast.cs" Line="24" Column="1" />
+      <File FileName="ApplicationCore/Entities/Crew.cs" Line="25" Column="36" />
+      <File FileName="ApplicationCore/Entities/Favorite.cs" Line="10" Column="13" />
+      <File FileName="ApplicationCore/Entities/Movie.cs" Line="11" Column="14" />
+      <File FileName="ApplicationCore/Entities/MovieCast.cs" Line="18" Column="23" />
+      <File FileName="ApplicationCore/Entities/MovieCrew.cs" Line="22" Column="39" />
+      <File FileName="ApplicationCore/Entities/MovieGenre.cs" Line="7" Column="1" />
+      <File FileName="ApplicationCore/Entities/Purchase.cs" Line="10" Column="13" />
+      <File FileName="ApplicationCore/Entities/Review.cs" Line="14" Column="18" />
+      <File FileName="ApplicationCore/Entities/Trailer.cs" Line="20" Column="25" />
+      <File FileName="ApplicationCore/Entities/User.cs" Line="10" Column="12" />
+      <File FileName="ApplicationCore/Entities/UserRole.cs" Line="7" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -48,7 +60,6 @@
                 <Node name="Repositories" expanded="True" />
                 <Node name="Services" expanded="True" />
               </Node>
-              <Node name="Entities" expanded="True" />
             </Node>
             <Node name="Infrastructure" expanded="True">
               <Node name="Dependencies" expanded="True">
@@ -57,6 +68,7 @@
                 <Node name="ProjectDependencies" expanded="True" />
               </Node>
               <Node name="Data" expanded="True" />
+              <Node name="Migrations" expanded="True" />
               <Node name="Services" expanded="True" />
             </Node>
             <Node name="MovieShopMVC" expanded="True">
@@ -67,7 +79,7 @@
               </Node>
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="appsettings.json" selected="True" />
+              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -77,7 +89,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.MovieShopMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tongyuejia/Desktop/Antra/MovieShop/MovieShopMVC/MovieShopMVC.csproj": {}
+    "/Users/tongyuejia/Desktop/MyProject/MovieShop/MovieShopMVC/MovieShopMVC.csproj": {}
   },
   "projects": {
-    "/Users/tongyuejia/Desktop/Antra/MovieShop/ApplicationCore/ApplicationCore.csproj": {
+    "/Users/tongyuejia/Desktop/MyProject/MovieShop/ApplicationCore/ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tongyuejia/Desktop/Antra/MovieShop/ApplicationCore/ApplicationCore.csproj",
+        "projectUniqueName": "/Users/tongyuejia/Desktop/MyProject/MovieShop/ApplicationCore/ApplicationCore.csproj",
         "projectName": "ApplicationCore",
-        "projectPath": "/Users/tongyuejia/Desktop/Antra/MovieShop/ApplicationCore/ApplicationCore.csproj",
+        "projectPath": "/Users/tongyuejia/Desktop/MyProject/MovieShop/ApplicationCore/ApplicationCore.csproj",
         "packagesPath": "/Users/tongyuejia/.nuget/packages/",
-        "outputPath": "/Users/tongyuejia/Desktop/Antra/MovieShop/ApplicationCore/obj/",
+        "outputPath": "/Users/tongyuejia/Desktop/MyProject/MovieShop/ApplicationCore/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tongyuejia/.nuget/NuGet/NuGet.Config"
@@ -68,14 +68,14 @@
         }
       }
     },
-    "/Users/tongyuejia/Desktop/Antra/MovieShop/Infrastructure/Infrastructure.csproj": {
+    "/Users/tongyuejia/Desktop/MyProject/MovieShop/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tongyuejia/Desktop/Antra/MovieShop/Infrastructure/Infrastructure.csproj",
+        "projectUniqueName": "/Users/tongyuejia/Desktop/MyProject/MovieShop/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "/Users/tongyuejia/Desktop/Antra/MovieShop/Infrastructure/Infrastructure.csproj",
+        "projectPath": "/Users/tongyuejia/Desktop/MyProject/MovieShop/Infrastructure/Infrastructure.csproj",
         "packagesPath": "/Users/tongyuejia/.nuget/packages/",
-        "outputPath": "/Users/tongyuejia/Desktop/Antra/MovieShop/Infrastructure/obj/",
+        "outputPath": "/Users/tongyuejia/Desktop/MyProject/MovieShop/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tongyuejia/.nuget/NuGet/NuGet.Config"
@@ -90,8 +90,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/tongyuejia/Desktop/Antra/MovieShop/ApplicationCore/ApplicationCore.csproj": {
-                "projectPath": "/Users/tongyuejia/Desktop/Antra/MovieShop/ApplicationCore/ApplicationCore.csproj"
+              "/Users/tongyuejia/Desktop/MyProject/MovieShop/ApplicationCore/ApplicationCore.csproj": {
+                "projectPath": "/Users/tongyuejia/Desktop/MyProject/MovieShop/ApplicationCore/ApplicationCore.csproj"
               }
             }
           }
@@ -136,14 +136,14 @@
         }
       }
     },
-    "/Users/tongyuejia/Desktop/Antra/MovieShop/MovieShopMVC/MovieShopMVC.csproj": {
+    "/Users/tongyuejia/Desktop/MyProject/MovieShop/MovieShopMVC/MovieShopMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tongyuejia/Desktop/Antra/MovieShop/MovieShopMVC/MovieShopMVC.csproj",
+        "projectUniqueName": "/Users/tongyuejia/Desktop/MyProject/MovieShop/MovieShopMVC/MovieShopMVC.csproj",
         "projectName": "MovieShopMVC",
-        "projectPath": "/Users/tongyuejia/Desktop/Antra/MovieShop/MovieShopMVC/MovieShopMVC.csproj",
+        "projectPath": "/Users/tongyuejia/Desktop/MyProject/MovieShop/MovieShopMVC/MovieShopMVC.csproj",
         "packagesPath": "/Users/tongyuejia/.nuget/packages/",
-        "outputPath": "/Users/tongyuejia/Desktop/Antra/MovieShop/MovieShopMVC/obj/",
+        "outputPath": "/Users/tongyuejia/Desktop/MyProject/MovieShop/MovieShopMVC/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tongyuejia/.nuget/NuGet/NuGet.Config"
@@ -158,11 +158,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/tongyuejia/Desktop/Antra/MovieShop/ApplicationCore/ApplicationCore.csproj": {
-                "projectPath": "/Users/tongyuejia/Desktop/Antra/MovieShop/ApplicationCore/ApplicationCore.csproj"
+              "/Users/tongyuejia/Desktop/MyProject/MovieShop/ApplicationCore/ApplicationCore.csproj": {
+                "projectPath": "/Users/tongyuejia/Desktop/MyProject/MovieShop/ApplicationCore/ApplicationCore.csproj"
               },
-              "/Users/tongyuejia/Desktop/Antra/MovieShop/Infrastructure/Infrastructure.csproj": {
-                "projectPath": "/Users/tongyuejia/Desktop/Antra/MovieShop/Infrastructure/Infrastructure.csproj"
+              "/Users/tongyuejia/Desktop/MyProject/MovieShop/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/tongyuejia/Desktop/MyProject/MovieShop/Infrastructure/Infrastructure.csproj"
               }
             }
           }

@@ -8,12 +8,14 @@ namespace ApplicationCore.Entities
 
     public class Genre
 	{
+        [Key]
         public int Id { get; set; }
 
         [MaxLength(64)]
+        [Required]
         public string Name { get; set; }
 
-        // public ICollection<MovieGenre> MoviesOfGenre { get; set; }
+        public ICollection<MovieGenre> MoviesOfGenre { get; set; }
 
     }
 }
