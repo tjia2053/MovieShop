@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using ApplicationCore.Contracts.Services;
 using Microsoft.AspNetCore.Mvc;
 using MovieShopMVC.Models;
 
@@ -7,19 +8,21 @@ namespace MovieShopMVC.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly IMovieService _movieService;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, IMovieService movieService)
     {
         _logger = logger;
+        _movieService = movieService;
     }
 
-    [HttpGet]
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        return View();
+        var movies = await _movieService.GetTopGrossingMovies();
+
+        return View(movies);
     }
 
-    [HttpGet]
     public IActionResult Privacy()
     {
         return View();
@@ -32,27 +35,9 @@ public class HomeController : Controller
     }
 }
 
-public class MoviesController : Controller
-{
-    
-}
 
-public class UserController : Controller
-{
 
-}
 
-public class AdminController : Controller
-{
 
-}
 
-public class AccountController : Controller
-{
 
-}
-
-public class CastController : Controller
-{
-
-}

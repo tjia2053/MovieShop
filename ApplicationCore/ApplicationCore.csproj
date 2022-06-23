@@ -15,6 +15,7 @@
     <None Remove="Models\" />
     <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
     <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Entities\Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contracts\" />
@@ -23,6 +24,7 @@
     <Folder Include="Entities\" />
     <Folder Include="Exceptions\" />
     <Folder Include="Models\" />
+    <Folder Include="Entities\Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.6" />
