@@ -4,6 +4,7 @@ using ApplicationCore.Entities;
 using Infrastructure.Data;
 using Infrastructure.Repositories;
 using Infrastructure.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -12,26 +13,29 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-
-// DI is the first class citizen in .NET Core
-// older .NET framework DI was not builtin, we had to rely on 3rd party libraries, autofac, ninject
-builder.Services.AddScoped<IMovieService, MovieService>();
-
-// Inject the connection string into DbContext options constructor
-// get the connection string from appsetting.json
-builder.Services.AddDbContext<MovieShopDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("MovieShopDbConnection"));
-});
-
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IRepository<Genre>, Repository<Genre>>();
 builder.Services.AddScoped<IGenreService, GenreService>();
 builder.Services.AddScoped<ICastService, CastService>();
 builder.Services.AddScoped<ICastRepository, CastRepository>();
 builder.Services.AddScoped<IMovieService, MovieService>();
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
+builder.Services.AddScoped<IAccountService, AccountService>();
 
+builder.Services.AddDbContext<MovieShopDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MovieShopDbConnection"));
+});
 
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(
+        options =>
+        {
+            options.Cookie.Name = "MovieShopAuthCookie";
+            options.ExpireTimeSpan = TimeSpan.FromHours(2);
+            options.LoginPath = "/account/login";
+        }
+    );
 
 
 var app = builder.Build();
@@ -48,7 +52,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
