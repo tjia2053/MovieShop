@@ -6,7 +6,7 @@ using Infrastructure.Repositories;
 using Infrastructure.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
-
+using MovieShopMVC.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +21,9 @@ builder.Services.AddScoped<ICastRepository, CastRepository>();
 builder.Services.AddScoped<IMovieService, MovieService>();
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 builder.Services.AddScoped<IAccountService, AccountService>();
+builder.Services.AddScoped<ICurrentLoggedInUser, CurrentLoggedInUser>();
+
+builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddDbContext<MovieShopDbContext>(options =>
 {
@@ -60,4 +63,3 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
-

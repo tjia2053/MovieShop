@@ -9,10 +9,15 @@
   <ItemGroup>
     <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
     <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
+    <None Remove="System.Linq" />
+    <None Remove="Views\Home\" />
+    <None Remove="Views\Account\" />
     <None Remove="Views\Cast\" />
     <None Remove="Views\Movies\" />
-    <None Remove="Views\Account\" />
-    <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
+    <None Remove="Views\Shared\Components\" />
+    <None Remove="Views\Shared\Components\Genres\" />
+    <None Remove="Services\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.6" />
@@ -21,6 +26,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.6" />
+    <PackageReference Include="System.Linq" Version="4.3.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ApplicationCore\ApplicationCore.csproj">
@@ -31,8 +37,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Views\Home\" />
+    <Folder Include="Views\Account\" />
     <Folder Include="Views\Cast\" />
     <Folder Include="Views\Movies\" />
-    <Folder Include="Views\Account\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\Genres\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 </Project>

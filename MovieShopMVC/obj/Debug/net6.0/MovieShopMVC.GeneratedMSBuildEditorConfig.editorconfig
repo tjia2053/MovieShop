@@ -39,16 +39,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWVzL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/tongyuejia/Desktop/MyProject/MovieShop/MovieShopMVC/Views/Movies/PagedMovies.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWVzL1BhZ2VkTW92aWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tongyuejia/Desktop/MyProject/MovieShop/MovieShopMVC/Views/Shared/Components/Genres/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvR2VucmVzL0RlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/tongyuejia/Desktop/MyProject/MovieShop/MovieShopMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tongyuejia/Desktop/MyProject/MovieShop/MovieShopMVC/Views/Shared/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0luZGV4LmNzaHRtbA==
+[/Users/tongyuejia/Desktop/MyProject/MovieShop/MovieShopMVC/Views/Shared/_LoginInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpbkluZm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/tongyuejia/Desktop/MyProject/MovieShop/MovieShopMVC/Views/Shared/_MovieCard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Nb3ZpZUNhcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tongyuejia/Desktop/MyProject/MovieShop/MovieShopMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/tongyuejia/Desktop/MyProject/MovieShop/MovieShopMVC/Views/_ViewImports.cshtml]

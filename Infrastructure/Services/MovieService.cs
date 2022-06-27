@@ -33,7 +33,8 @@ namespace Infrastructure.Services
                 Budget = String.Format("{0:c}", movieDetails.Budget),
                 ReleaseDate = movieDetails.ReleaseDate.Value.ToString("MMMM dd, yyyy"),
                 ReleaseYear = movieDetails.ReleaseDate.Value.Year,
-                Price = movieDetails.Price
+                Price = movieDetails.Price,
+                Rating = Math.Round(await _movieRepository.GetAverageRatingForMovie(id), 2)
             };
 
             foreach (var genre in movieDetails.GenresOfMovies)
@@ -54,6 +55,20 @@ namespace Infrastructure.Services
 
 
             return movie;
+        }
+
+        public async Task<PagedResultSetModel<MovieCardModel>> GetMoviesByGenre(int genreId, int pageSize = 30, int pageNumber = 1)
+        {
+            var movies = await _movieRepository.GetMoviesByGenre(genreId, pageSize, pageNumber);
+
+            var movieCards = new List<MovieCardModel>();
+
+            foreach (var movie in movies.PagedData)
+            {
+                movieCards.Add(new MovieCardModel { Id = movie.Id, PosterUrl = movie.PosterUrl, Title = movie.Title });
+            }
+
+            return new PagedResultSetModel<MovieCardModel>(pageNumber, movies.TotalRecords, pageSize, movieCards);
         }
 
         public async Task<List<MovieCardModel>> GetTopGrossingMovies()

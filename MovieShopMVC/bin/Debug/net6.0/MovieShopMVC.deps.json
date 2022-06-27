@@ -12,7 +12,8 @@
           "Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.6",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.6"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.6",
+          "System.Linq": "4.3.0"
         },
         "runtime": {
           "MovieShopMVC.dll": {}
@@ -2241,6 +2242,7 @@
           "ApplicationCore": "1.0.0",
           "Microsoft.AspNetCore.Cryptography.KeyDerivation": "6.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.6",
+          "System.Linq": "4.3.0",
           "System.Security.Cryptography.Cng": "5.0.0"
         },
         "runtime": {

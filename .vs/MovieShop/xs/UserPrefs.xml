@@ -1,26 +1,30 @@
 ﻿<Properties StartupConfiguration="{C0F986CB-DDEA-486B-AA76-DF301B1149A8}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MovieShopMVC/appsettings.json">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.MovieShopMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieShopMVC/Program.cs">
     <Files>
       <File FileName="MovieShopMVC/Controllers/HomeController.cs" Line="30" Column="1" />
-      <File FileName="MovieShopMVC/Views/Home/Index.cshtml" Line="3" Column="3" />
-      <File FileName="ApplicationCore/Contracts/Repositories/IMovieRepository.cs" Line="8" Column="55" />
+      <File FileName="ApplicationCore/Contracts/Repositories/IMovieRepository.cs" Line="11" Column="28" />
       <File FileName="ApplicationCore/Contracts/Repositories/IUserRepository.cs" Line="12" Column="1" />
       <File FileName="ApplicationCore/Contracts/Repositories/ICastRepository.cs" Line="6" Column="51" />
       <File FileName="ApplicationCore/Contracts/Repositories/IPurchaseRepository.cs" Line="9" Column="1" />
       <File FileName="ApplicationCore/Contracts/Repositories/IReportRepository.cs" Line="1" Column="1" />
-      <File FileName="ApplicationCore/Contracts/Services/IMovieService.cs" Line="8" Column="20" />
+      <File FileName="ApplicationCore/Contracts/Services/IMovieService.cs" Line="12" Column="2" />
       <File FileName="ApplicationCore/Contracts/Services/IUserService.cs" Line="1" Column="1" />
       <File FileName="ApplicationCore/Contracts/Services/IAccountService.cs" Line="10" Column="6" />
       <File FileName="ApplicationCore/Contracts/Services/IGenreService.cs" Line="8" Column="54" />
       <File FileName="ApplicationCore/Contracts/Services/IAdminService.cs" Line="1" Column="1" />
       <File FileName="ApplicationCore/Contracts/Services/ICastService.cs" Line="8" Column="16" />
-      <File FileName="Infrastructure/Repositories/MovieRepository.cs" Line="21" Column="50" />
+      <File FileName="Infrastructure/Repositories/MovieRepository.cs" Line="15" Column="1" />
       <File FileName="Infrastructure/Repositories/UserRepository.cs" Line="14" Column="10" />
       <File FileName="Infrastructure/Repositories/CastRepository.cs" Line="21" Column="21" />
       <File FileName="Infrastructure/Repositories/PurchaseRepository.cs" Line="9" Column="3" />
       <File FileName="Infrastructure/Repositories/ReportRepository.cs" Line="10" Column="2" />
-      <File FileName="Infrastructure/Services/MovieService.cs" Line="56" Column="26" />
+      <File FileName="Infrastructure/Services/MovieService.cs" Line="71" Column="33" />
       <File FileName="Infrastructure/Services/UserService.cs" Line="11" Column="1" />
       <File FileName="Infrastructure/Services/AccountService.cs" Line="87" Column="49" />
       <File FileName="Infrastructure/Services/GenreService.cs" Line="24" Column="10" />
@@ -28,7 +32,7 @@
       <File FileName="Infrastructure/Services/CastService.cs" Line="26" Column="28" />
       <File FileName="MovieShopMVC/appsettings.json" Line="14" Column="1" />
       <File FileName="Infrastructure/Data/MovieShopDbContext.cs" Line="28" Column="1" />
-      <File FileName="MovieShopMVC/Program.cs" Line="27" Column="80" />
+      <File FileName="MovieShopMVC/Program.cs" Line="30" Column="80" />
       <File FileName="../../../../../usr/local/share/dotnet/sdk/6.0.301/Microsoft.Common.CurrentVersion.targets" Line="4699" Column="5" />
       <File FileName="ApplicationCore/Entities/Genre.cs" Line="18" Column="9" />
       <File FileName="Infrastructure/Migrations/MovieShopDbContextModelSnapshot.cs" Line="1" Column="1" />
@@ -58,44 +62,43 @@
       <File FileName="Infrastructure/Repositories/Repository.cs" Line="43" Column="6" />
       <File FileName="MovieShopMVC/Controllers/AdminController.cs" Line="11" Column="10" />
       <File FileName="MovieShopMVC/Controllers/CastController.cs" Line="21" Column="10" />
-      <File FileName="MovieShopMVC/Controllers/MoviesController.cs" Line="11" Column="48" />
-      <File FileName="MovieShopMVC/Controllers/UserController.cs" Line="11" Column="42" />
-      <File FileName="MovieShopMVC/Controllers/AccountController.cs" Line="52" Column="42" />
+      <File FileName="MovieShopMVC/Controllers/MoviesController.cs" Line="29" Column="10" />
+      <File FileName="MovieShopMVC/Controllers/UserController.cs" Line="19" Column="10" />
+      <File FileName="MovieShopMVC/Controllers/AccountController.cs" Line="52" Column="43" />
       <File FileName="MovieShopMVC/Models/ErrorViewModel.cs" Line="9" Column="1" />
       <File FileName="MovieShopMVC/Properties/launchSettings.json" Line="16" Column="31" />
       <File FileName="MovieShopMVC/Views/Home/Privacy.cshtml" Line="6" Column="10" />
       <File FileName="MovieShopMVC/Views/_ViewImports.cshtml" Line="1" Column="1" />
       <File FileName="MovieShopMVC/Views/Shared/Error.cshtml" Line="1" Column="1" />
       <File FileName="MovieShopMVC/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
-      <File FileName="MovieShopMVC/Views/Shared/Index.cshtml" Line="10" Column="1" />
-      <File FileName="MovieShopMVC/Views/Movies/Details.cshtml" Line="1" Column="1" />
       <File FileName="ApplicationCore/Models/UserModel.cs" Line="10" Column="18" />
-      <File FileName="MovieShopMVC/Views/Cast/Details.cshtml" Line="19" Column="7" />
-      <File FileName="MovieShopMVC/Views/Account/Login.cshtml" Line="38" Column="2" />
-      <File FileName="MovieShopMVC/Views/Account/Register.cshtml" Line="9" Column="27" />
+      <File FileName="MovieShopMVC/Views/Account/Login.cshtml" Line="39" Column="2" />
+      <File FileName="MovieShopMVC/Views/Account/Register.cshtml" Line="53" Column="2" />
+      <File FileName="MovieShopMVC/Views/Shared/_MovieCard.cshtml" Line="2" Column="1" />
+      <File FileName="MovieShopMVC/Views/Account/Index.cshtml" Line="1" Column="1" />
+      <File FileName="MovieShopMVC/Views/Cast/Details.cshtml" Line="22" Column="7" />
+      <File FileName="MovieShopMVC/Views/Home/Index.cshtml" Line="16" Column="7" />
+      <File FileName="MovieShopMVC/Views/Movies/Details.cshtml" Line="226" Column="7" />
+      <File FileName="MovieShopMVC/Views/Movies/PagedMovies.cshtml" Line="26" Column="1" />
+      <File FileName="MovieShopMVC/Views/Shared/_LoginInfo.cshtml" Line="30" Column="2" />
+      <File FileName="MovieShopMVC/Views/Shared/_Layout.cshtml.css" Line="1" Column="1" />
+      <File FileName="MovieShopMVC/Views/Shared/_ValidationScriptsPartial.cshtml" Line="2" Column="34" />
+      <File FileName="MovieShopMVC/Views/Shared/Components/Genres/Default.cshtml" Line="7" Column="1" />
+      <File FileName="MovieShopMVC/Views/Shared/Components/Genres/GenresViewComponent.cs" Line="9" Column="26" />
+      <File FileName="MovieShopMVC/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="ApplicationCore/Contracts/Repositories/IReviewRepository.cs" Line="11" Column="1" />
+      <File FileName="ApplicationCore/Contracts/Services/IReviewService.cs" Line="6" Column="54" />
+      <File FileName="ApplicationCore/Exceptions/ConflictException.cs" Line="1" Column="1" />
+      <File FileName="ApplicationCore/Models/PagedResultSetModel.cs" Line="19" Column="28" />
+      <File FileName="MovieShopMVC/Services/ICurrentLoggedInUser.cs" Line="10" Column="38" />
+      <File FileName="MovieShopMVC/Services/CurrentLoggedInUser.cs" Line="28" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MovieShop" expanded="True">
-            <Node name="ApplicationCore" expanded="True">
-              <Node name="Contracts" expanded="True" />
-            </Node>
-            <Node name="Infrastructure" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="FrameworkReferences" expanded="True" />
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-              <Node name="Repositories" expanded="True" />
-              <Node name="Services" expanded="True" />
-            </Node>
             <Node name="MovieShopMVC" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-                <Node name="ProjectDependencies" expanded="True" />
-              </Node>
               <Node name="Controllers" expanded="True" />
-              <Node name="wwwroot" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
@@ -106,10 +109,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.MovieShopMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

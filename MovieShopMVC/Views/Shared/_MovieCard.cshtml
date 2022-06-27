@@ -1,3 +1,10 @@
-﻿<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+﻿@*Movie Card Partial View will be used across multiple views in our application*@
+
+@model ApplicationCore.Models.MovieCardModel
+
+<div class="card mb-4 shadow">
+    <a asp-controller="Movies" asp-action="Details" asp-route-id="@Model.Id">
+        <img src="@Model.PosterUrl" class="img-fluid" alt="@Model.Title" />
+    </a>
+</div>
 
