@@ -25,10 +25,12 @@ namespace ApplicationCore.Models
         public int ReleaseYear { get; set; }
         public int? RunTime { get; set; }
         public decimal? Price { get; set; }
+        public bool IsPurchased { get; set; }
 
         public List<GenreModel> Genres { get; set; }
         public List<CastModel> Casts { get; set; }
         public List<TrailerModel> Trailers { get; set; }
+        public ReviewRequestModel Review { get; set; }
     }
 }
 

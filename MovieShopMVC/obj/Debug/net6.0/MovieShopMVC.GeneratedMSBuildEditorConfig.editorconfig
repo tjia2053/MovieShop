@@ -43,6 +43,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWVzL1BhZ2VkTW92aWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/tongyuejia/Desktop/MyProject/MovieShop/MovieShopMVC/Views/Shared/Components/Favorite/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvRmF2b3JpdGUvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/tongyuejia/Desktop/MyProject/MovieShop/MovieShopMVC/Views/Shared/Components/Genres/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvR2VucmVzL0RlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

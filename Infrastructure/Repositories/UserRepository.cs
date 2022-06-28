@@ -8,14 +8,14 @@ namespace Infrastructure.Repositories
 {
     public class UserRepository : Repository<User>, IUserRepository
     {
-
         public UserRepository(MovieShopDbContext dbContext) : base(dbContext)
         {
         }
 
-        public Task<bool> CheckIfMoviePurchasedByUser(int userId, int movieId)
+        public override async Task<User> GetById(int id)
         {
-            throw new NotImplementedException();
+            var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.Id == id);
+            return user;
         }
 
 
@@ -24,6 +24,7 @@ namespace Infrastructure.Repositories
             var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == email);
             return user;
         }
+
 
     }
 }

@@ -13,6 +13,7 @@ namespace ApplicationCore.Entities
         [Required]
         public int UserId { get; set; }
 
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required]
         public Guid PurchaseNumber { get; set; }
 

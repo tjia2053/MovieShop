@@ -22,12 +22,16 @@ builder.Services.AddScoped<IMovieService, MovieService>();
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<ICurrentLoggedInUser, CurrentLoggedInUser>();
+builder.Services.AddScoped<IPurchaseRepository, PurchaseRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IFavoriteRepository, FavoriteRepository>();
+builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
 
 builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddDbContext<MovieShopDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("MovieShopDbConnection"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MovieShopConnection"));
 });
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -55,6 +59,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+//app.UseCookiePolicy();
 app.UseAuthentication();
 app.UseAuthorization();
 

@@ -16,7 +16,6 @@ public class HomeController : Controller
         _movieService = movieService;
     }
 
-    [HttpGet]
     public async Task<IActionResult> Index()
     {
         var movies = await _movieService.GetTopGrossingMovies();

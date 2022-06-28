@@ -1,5 +1,6 @@
 ﻿@model ApplicationCore.Models.MovieDetailsModel
 
+
 <style>
     .movie-facts .list-group-item {
         border-color: black;
@@ -59,96 +60,60 @@
                     <button class="btn btn-outline-light mb-4" data-bs-toggle="modal" data-bs-target="#reviewModal">
                         <i class="fa-regular fa-pen-to-square me-2"></i>REVIEW
                     </button>
-                    <button class="btn btn-light mb-4" data-bs-toggle="modal" data-bs-target="#purchaseModal">
-                        BUY $@Model.Price
-                    </button>
+                    @if (Model.IsPurchased)
+                    {
+                        <button class="btn btn-light mb-4">
+                            Watch Movie
+                        </button>
+                    }
+                    else
+                    {
+                        <button class="btn btn-light mb-4 " data-bs-toggle="modal" data-bs-target="#purchaseModal">
+                            BUY $@Model.Price
+                        </button>
+                    }
+
+                    @await Component.InvokeAsync("Favorite", new { movieId = @Model.Id })
 
                     <!-- Modals -->
                     <!-- Review -->
-                    <div class="modal fade"
-                         id="reviewModal"
-                         tabindex="-1"
-                         aria-labelledby="exampleModalLabel"
-                         aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">
-                                        What did you think?
-                                    </h5>
-                                    <button type="button"
-                                            class="btn-close"
-                                            data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex">
-                                    <div class="dropdown me-2">
-                                        <button class="btn btn-secondary dropdown-toggle"
-                                                type="button"
-                                                id="reviewDrpdwnMenuBtn"
-                                                data-bs-toggle="dropdown"
-                                                aria-expanded="false">
-                                            Rating
-                                        </button>
-                                        <ul class="dropdown-menu"
-                                            aria-labelledby="reviewDrpdwnMenuBtn">
-                                            @for (int i = 1; i <= 10; i++)
-                                            {
-                                                <li><a class="dropdown-item" href="#">@i</a></li>
-                                            }
-                                        </ul>
-                                    </div>
-                                    <div class="input-group">
-                                        <textarea class="form-control"></textarea>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button"
-                                            class="btn btn-secondary"
-                                            data-bs-dismiss="modal">
-                                        Close
-                                    </button>
-                                    <button type="button" class="btn btn-primary">
-                                        Submit
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <partial name="_ReviewModal" model="@Model.Review">
 
-                    <!-- Purchase -->
-                    <div class="modal fade"
-                         id="purchaseModal"
-                         tabindex="-1"
-                         aria-labelledby="exampleModalLabel"
-                         aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">
-                                        Confirm Purchase
-                                    </h5>
-                                    <button type="button"
-                                            class="btn-close"
-                                            data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    Confirming purchase of @Model.Title for $@Model.Price ?
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button"
-                                            class="btn btn-secondary"
-                                            data-bs-dismiss="modal">
-                                        Close
-                                    </button>
-                                    <button type="button" class="btn btn-primary">
-                                        Confirm
-                                    </button>
+                        <!-- Purchase -->
+                        <div class="modal fade"
+                             id="purchaseModal"
+                             tabindex="-1"
+                             aria-labelledby="exampleModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">
+                                            Confirm Purchase
+                                        </h5>
+                                        <button type="button"
+                                                class="btn-close"
+                                                data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Confirming purchase of @Model.Title for $@Model.Price ?
+                                    </div>
+                                    <form asp-action="BuyMovie" asp-controller="User" asp-route-movieId="@Model.Id">
+                                        <div class="modal-footer">
+                                            <button type="button"
+                                                    class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">
+                                                Close
+                                            </button>
+                                            <button class="btn btn-primary" type="submit">
+                                                Confirm
+                                            </button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -171,7 +136,7 @@
                             <span class="badge rounded-pill bg-dark">@Model.RunTime</span>
                         </li>
                         <li class="movie-facts list-group-item">
-                            <i class="fa-light fa-money-bill me-2"></i>Box Office
+                            <i class="fa-solid fa-money-bill me-2"></i>Box Office
                             <span class="badge rounded-pill bg-dark">@Model.Revenue</span>
                         </li>
                         <li class="movie-facts list-group-item">
@@ -224,4 +189,3 @@
         </div>
     </div>
 </div>
-

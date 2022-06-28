@@ -8,13 +8,15 @@ namespace Infrastructure.Services
 	public class MovieService : IMovieService
 	{
         private readonly IMovieRepository _movieRepository;
+        private readonly IPurchaseRepository _purchaseRepository;
 
-        public MovieService(IMovieRepository movieRepository)
+        public MovieService(IMovieRepository movieRepository, IPurchaseRepository purchaseRepository)
         {
             _movieRepository = movieRepository;
+            _purchaseRepository = purchaseRepository;
         }
 
-        public async Task<MovieDetailsModel> GetMovieDetails(int id)
+        public async Task<MovieDetailsModel> GetMovieDetails(int id, int userId = -1)
         {
             var movieDetails = await _movieRepository.GetById(id);
 
@@ -34,8 +36,11 @@ namespace Infrastructure.Services
                 ReleaseDate = movieDetails.ReleaseDate.Value.ToString("MMMM dd, yyyy"),
                 ReleaseYear = movieDetails.ReleaseDate.Value.Year,
                 Price = movieDetails.Price,
-                Rating = Math.Round(await _movieRepository.GetAverageRatingForMovie(id), 2)
+                Rating = Math.Round(await _movieRepository.GetAverageRatingForMovie(id), 2),
+                IsPurchased = (userId == -1) ? false : await _purchaseRepository.CheckIfPurchaseExists(userId, id)
             };
+
+
 
             foreach (var genre in movieDetails.GenresOfMovies)
             {
@@ -57,7 +62,7 @@ namespace Infrastructure.Services
             return movie;
         }
 
-        public async Task<PagedResultSetModel<MovieCardModel>> GetMoviesByGenre(int genreId, int pageSize = 30, int pageNumber = 1)
+        public async Task<PagedResultSetModel<MovieCardModel>> GetMoviesByGenre(int genreId, int pageSize = 30, int pageNumber = 1, int paginationRange = 5)
         {
             var movies = await _movieRepository.GetMoviesByGenre(genreId, pageSize, pageNumber);
 
@@ -68,7 +73,7 @@ namespace Infrastructure.Services
                 movieCards.Add(new MovieCardModel { Id = movie.Id, PosterUrl = movie.PosterUrl, Title = movie.Title });
             }
 
-            return new PagedResultSetModel<MovieCardModel>(pageNumber, movies.TotalRecords, pageSize, movieCards);
+            return new PagedResultSetModel<MovieCardModel>(pageNumber, movies.TotalRecords, pageSize, movieCards, paginationRange);
         }
 
         public async Task<List<MovieCardModel>> GetTopGrossingMovies()

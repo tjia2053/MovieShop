@@ -12,6 +12,7 @@ namespace MovieShopMVC.Services
             _contextAccessor = contextAccessor;
         }
 
+
         public int UserId => Convert.ToInt32(_contextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value);
 
         public string Email => _contextAccessor.HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email).Value;
